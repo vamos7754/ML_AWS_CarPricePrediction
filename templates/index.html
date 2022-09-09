@@ -1,0 +1,82 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+    <body>
+        <h3>Car Price Prediction Form</h3>
+    <div>
+        <form method="POST", action = "{{url_for('predict')}}">
+            <label for="fueltype">FuelType</label>
+            <select id="fueltype" name="fueltype">
+                <option value="gas">gas</option>
+                <option value="diesel">diesel</option>
+            </select>
+            <br><br>
+            <label for="aspiration">Aspiration</label>
+            <select id="aspiration" name="aspiration">
+                <option value="std">std</option>
+                <option value="turbo">turbo</option>
+            </select>
+            <br><br>
+            <label for="wheelbase">WheelBase</label>
+            <input type="text" name="wheelbase" placeholder="wheelbase">
+            <br><br>
+            <label for="carlength">CarLength</label>
+            <input type="text" name="carlength" placeholder="carlength">
+            <br><br>
+            <label for="carwidth">CarWidth</label>
+            <input type="text" name="carwidth" placeholder="carwidth">
+            <br><br>
+            <label for="curbweight">CurbWeight</label>
+            <input type="text" name="curbweight" placeholder="curbweight">
+            <br><br>
+            <label for="enginesize">EngineSize</label>
+            <input type="text" name="enginesize" placeholder="enginesize">
+            <br><br>
+            <label for="boreratio">BoreRatio</label>
+            <input type="text" name="boreratio" placeholder="boreratio">
+            <br><br>
+            <label for="horsepower">HorsePower</label>
+            <input type="text" name="horsepower" placeholder="horsepower">
+            <br><br>
+            <label for="citympg">CityMPG</label>
+            <input type="text" name="citympg" placeholder="citympg">
+            <br><br>
+            <label for="highwaympg">HighwayMPG</label>
+            <input type="text" name="highwaympg" placeholder="highwaympg">
+            <br><br>
+            <label for="carsrange">CarsRange</label>
+            <select id="carsrange" name="carsrange">
+                <option value="Medium">Medium</option>
+                <option value="Highend">Highend</option>
+                <option value="Budget">Budget</option>
+            </select>
+            <br><br>
+            <label for="carbody">CarBody</label>
+            <select id="carbody" name="carbody">
+                <option value="convertible">convertible</option>
+                <option value="hardtop">hardtop</option>
+                <option value="hatchback">hatchback</option>
+                <option value="sedan">sedan</option>
+                <option value="wagon">wagon</option>
+                <option value="None">None</option>
+            </select>
+            <br><br>
+            <label for="enginetype">EngineType</label>
+            <select id="enginetype" name="enginetype">
+                <option value="dohc">dohc</option>
+                <option value="dohcv">dohcv</option>
+                <option value="l">l</option>
+                <option value="ohc">ohc</option>
+                <option value="ohcf">ohcf</option>
+                <option value="ohcv">ohcv</option>
+                <option value="rotor">rotor</option>
+                <option value="None">None</option>
+            </select>
+            <br><br>
+            <input type="submit" value="predict" onclick="predict()">
+            
+        </form>
+    </div>
+    </body>
+</html>
