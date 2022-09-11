@@ -31,7 +31,7 @@ class CarPrice():
        self.enginetype = 'enginetype_' + enginetype
 
     def load_model(self):
-        with open("Linear_Model.pkl",'rb') as f:
+        with open("AdaBoost_Model.pkl",'rb') as f:
             self.model = pickle.load(f)
 
         with open("Project_data.json",'r') as f:
